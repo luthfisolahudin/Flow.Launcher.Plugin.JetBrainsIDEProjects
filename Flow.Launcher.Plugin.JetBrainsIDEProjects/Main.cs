@@ -48,7 +48,7 @@ namespace Flow.Launcher.Plugin.JetBrainsIDEProjects
                     results.Add(new Result
                     {
                         Title = project.Name,
-                        SubTitle = project.Path,
+                        SubTitle = project.DisplayPath,
                         IcoPath = project.Application?.IcoFile ?? "icon.png",
                         Action = _ =>
                         {

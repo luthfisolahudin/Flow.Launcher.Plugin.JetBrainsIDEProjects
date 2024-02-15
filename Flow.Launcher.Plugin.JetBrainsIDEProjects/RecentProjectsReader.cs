@@ -223,6 +223,7 @@ public class RecentProject
 {
     public string Name { get; init; }
     public string Path { get; init; }
+    public string DisplayPath => Path.Replace(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "~");
     public ApplicationInfo Application { get; init; }
     public DateTime LastOpened { get; init; }
 }
